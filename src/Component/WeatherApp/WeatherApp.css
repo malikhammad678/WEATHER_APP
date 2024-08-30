@@ -1,0 +1,137 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 720px;
+    margin-bottom: 20px;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #130754 0%,#3b2f80 100%);
+}
+.top_bar {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 10px;
+}
+.top_bar input {
+    display: flex;
+    width: 350px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 40px;
+    height: 50px;
+    background-color: #ebfffc;
+    font-size: 15px;
+    color: #626262;
+    font-weight: 400;
+}
+.searchbox {
+    width: 50px ;
+    height: 50px;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.weather_img {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.weather_temp {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    color: #ebfffc;
+   font-weight: 400;
+}
+.weather_location {
+    display: flex;
+    justify-content: center;
+    color: #ebfffc;
+    font-size: 60px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: -20px;
+}
+.weather_container {
+    display: flex;
+    justify-content: center;
+    color: #ebfffc;
+    margin-top: 20px;
+    gap: 120px;
+}
+.element {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.data {
+    font-size: 30px;
+    font-weight: 400;
+}
+.txt {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width:600px) {
+    .container {
+        width: 400px;
+        height: 600px;
+    } 
+    .top_bar input {
+        width: 250px;
+    }
+    .weather_temp {
+        font-size: 70px;
+    }
+    .weather_location{
+        font-size: 35px;
+    } 
+    .weather_container  {
+        gap: 40px;
+        margin-top: 30px;
+    }
+    .element {
+        gap: 10px;
+    } 
+    .data {
+        font-size: 23px;
+    } 
+}
+
+@media (max-width:400px) {
+    .container {
+        width: 350px;
+        height: 550px;
+    } 
+    .top_bar input {
+        width: 250px;
+    }
+    .weather_temp {
+        font-size: 55px;
+        margin-bottom: 10px;
+    }
+    .weather_location{
+        font-size: 25px;
+    } 
+    .weather_container  {
+        gap: 25px;
+        margin-top: 25px;
+    }
+    .element {
+        gap: 10px;
+    } 
+    .data {
+        font-size: 20px;
+    } 
+}
